@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styleSheet/DRegistration.css">
+</head>
+<body>
+    <!-- <div class="header">
+        <h2 class="erp">ERP</h2>
+    </div> -->
+    <%- include('./nav.ejs') %>
+        <div class="container">
+            <h1 class="title">Upload files</h1>
+            <div class="form1">
+                <form action="/DfileUpload-data" method="post" enctype="multipart/form-data">
+                    <label for="">PAN Card</label>
+                    <input type="file" name="PanCard" placeholder="PAN" required>
+                    <label for="">Passport</label>
+                    <input type="file" name="Passport" required>
+                    <!-- <label for="">Driving License</label>
+                    <input type="file" name="Dlicense" placeholder="Driving License " required>
+                    <label for="">Voting CARD</label>
+                    <input type="file" name="VotingCard" placeholder="voting Card" required>
+                    <label for="">Bank Statment</label>
+                    <input type="file" name="BankStatement" name="" id=""  required>
+                    <label for="">Light Bill</label>
+                    <input type="file" name="LightBill" required>
+                    <input type="radio" name="gender" > Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other 
+                    <label for="">Passport photo</label>
+                    <input type="file" name="PassportPhoto" required>
+                    <label for="">Directior Sign</label>
+                    <input type="file" name="DSign" required>
+
+                    <input type="file" name="img" > -->
+                    <!-- <input type="file" name="img2" > -->
+                    <input type="submit" value="submit">
+
+                </form>
+                <!-- <div class="rst">
+                    <small>Reset password</small>
+                <a href=""> Reset</a>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- <div class="container1">
+            <h1 class="title">Other Details</h1>
+            <div class="form1">
+                <form action="">
+                    <label for="">Other Document</label>
+                    <input type="file" required>
+                    <label for="">Upload NOC </label>
+                    <input type="file"  required>
+                    <label for="">Download NOC </label>
+                    <input type="file"  required> -->
+                    
+                    <!-- <a href=""> <button>SUBMIT</button></a> -->
+                <!-- </form> -->
+                <!-- <div class="rst">
+                    <small>Reset password</small>
+                <a href=""> Reset</a>
+                </div> -->
+            </div>
+        </div>
+    
+</body>
+</html>

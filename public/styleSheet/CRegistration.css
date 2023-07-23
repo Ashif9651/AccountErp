@@ -1,0 +1,63 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* .header{
+    height: 60px;
+    background-color: #171c1c;
+
+} */
+
+
+.erp{
+    color: rgb(227, 200, 24);
+    padding-left: 20px;
+    padding-top: 15px;
+    
+}
+
+.container{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    height: 650px;
+    width: 600px;
+    border-radius: 5px;
+    
+}
+
+body{
+    background-image: url('/images/image_4.webp');
+    margin-bottom: 5%;
+}
+
+.form1{
+    margin: 0px 40px 40px 40px;
+    /* border: 2px solid black; */
+    height: 250px;
+}
+
+input{
+    width: 98% ;
+    height: 40px;
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(83, 204, 217);
+    border: none;
+}
+.title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.rst{
+    padding-top: 20px;
+    text-align: right;
+}

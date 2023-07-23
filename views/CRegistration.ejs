@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styleSheet/CRegistration.css">
+</head>
+<body>
+    <!-- <div class="header">
+        <h2 class="erp">ERP</h2>
+    </div> -->
+    <%- include('./nav.ejs') %>
+        <div class="container">
+            <h1 class="title">Company Registraion</h1>
+            <div class="form1">
+                <form action="/CRegistration_data", id="document" method="post" enctype="multipart/form-data">
+                    <input type="text" name="Cname" placeholder="Name of the Company" required>
+                    <input type="text" name="Ctype" placeholder="Company Type" required>
+                    <input type="text" name="purpose" placeholder="purpose" required>
+                    <input type="number" name="PCapital" placeholder="Paid Capital">
+                    <input type="number" name="AuthCapital" id="" placeholder="Authorization Capital">
+                    <input type="text" name="address" placeholder="Registered Address of the company">
+                    <input type="file" name="document" id="document" placeholder="Upload Address proof" required>
+                    <button> Submit</button>
+                </form>
+                <!-- <div class="rst">
+                    <small>Reset password</small>
+                <a href=""> Reset</a>
+                </div> -->
+            </div>
+        </div>
+     
+        <%- include('./footer.ejs') %>
+</body>
+</html>

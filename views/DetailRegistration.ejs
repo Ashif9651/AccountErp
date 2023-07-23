@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Registration</title>
+  <link rel="stylesheet" href="/styleSheet/DetailRegistration.css">
+  <style>
+  
+  </style>
+</head>
+<body>
+  <%- include('./nav.ejs') %>
+  
+  <form action="/DetailRegistration_data" method="post">
+    <h1>Company Registration Form</h1>
+    <div class="form-group">
+      <label for="company-name">Purpose Name of Company:</label>
+      <input type="text" id="company-name" name="companyName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Registered Address:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+    <div class="form-group">
+      <label for="purpose-detail">Detail of Purpose of Company Name:</label>
+      <input type="text" id="purpose-detail" name="purposeDetail" required>
+    </div>
+     <div class="form-group">
+      <label for="objectives">Objectives of Company:</label>
+      <input type="text" id="objectives" name="objectives" required>
+    </div>
+    <div class="form-group">
+      <label for="directors">Detail of Director/Shareholder:</label>
+      <table id="directors">
+        <thead>
+          <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th>DIN</th>
+            <th>Email</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><input type="text" name="directorName1" required></td>
+            <td><input type="text" name="directorDIN1" required></td>
+            <td><input type="email" name="directorEmail1" required></td>
+            <td><input type="number" name="directorMobile1" required></td>
+          </tr>
+       
+         </tbody>
+      </table>
+    </div>
+    <div class="form-group">
+      <label for="capital">Detail of Authorized and Paid Capital:</label>
+      <table id="capital">
+        <thead>
+          <tr>
+            <th>Particular</th>
+            <th>No of Share</th>
+            <th>Amount per Share</th>
+            <th>Total</th>
+            <th>Amount in Rupees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="capitalParticular1" required></td>
+            <td><input type="number" name="capitalShares1" required></td>
+            <td><input type="number" name="capitalAmountPerShare1" required></td>
+            <td><input type="number" name="capitalTotal1" required></td>
+            <td><input type="number" name="capitalAmountRupees1" required></td>
+          </tr>
+          Add more rows if needed
+        </tbody>
+      </table>
+    </div> 
+    <input type="submit" value="Register" class="btn-submit">
+  </form>
+</body>
+</html>

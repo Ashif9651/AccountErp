@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* CSS for header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 60px; */
+    background-color: #140e0e;
+  }
+
+  .header .logo {
+    font-size: 25px;
+    font-family: 'Sriracha', cursive;
+    color: #f08804;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #140e0e;
+    margin-right: 20px;
+    
+  }
+
+
+
+  .nav-items a {
+    text-decoration: none;
+    color: white;
+    padding: 35px 20px;
+  }
+  .nav-items a:hover{
+    color: #f08804;
+  }

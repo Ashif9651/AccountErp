@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styleSheet/DRegistration.css">
+</head>
+<body>
+    <%- include('./nav.ejs') %>
+        <div class="container">
+            <h1 class="title">Director Registraion</h1>
+            <div class="form1">
+                <form action="/DRegistration_data" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="date" name="DOB" placeholder="Date of birth" required>
+                    <input type="number" name="MobNumber" placeholder="Mobile Number" required>
+                    <input type="number" name="DL" placeholder="Driving License " required>
+                    <input type="number" name="VC" placeholder="voting Card" required>
+                    <input type="text" name="education" id="" placeholder="Education" required>
+                    <input type="number" name="DIN_NO" placeholder="DIN Number" required>
+                    <!-- <input type="radio" name="gender" > Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other  -->
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="number" name="Pan" placeholder="PAN CARD NO" required>
+                    <input type="text" name="Occupation" placeholder="Occupation" required>
+                    <button>Submit</button>
+                    <!-- <div class="aaa">
+                        <a href="DfileUpload">NEXT</a>
+                    </div> -->
+                </form>
+                <!-- <div class="rst">
+                    <small>Reset password</small>
+                <a href=""> Reset</a>
+                </div> -->
+            </div>
+        </div>
+    
+</body>
+</html>
